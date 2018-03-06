@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  WeChatPlugin
+
+  Created by Loveletter on 28/02/2018.
+  Copyright © 2018 CodeTips. All rights reserved.
+*/
+"PreventRevoke" = "Prevent Revoke";
+"AutoReply" = "Auto Reply";
+"NewWeChat" = "New WeChat";
+"RemoteControl" = "Remote Control";
+"WeChatOnTop" = "WeChat Stick";
+"AutoAuthLogin" = "AutoAuth Login";
+"Plugin" = "Plugin";

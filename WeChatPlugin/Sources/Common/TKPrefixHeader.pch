@@ -1,0 +1,30 @@
+//
+//  TKPrefixHeader.pch
+//  WeChatPlugin
+//
+//  Created by TK on 2017/8/20.
+//  Copyright © 2017年 tk. All rights reserved.
+//
+
+#ifndef TKPrefixHeader_pch
+#define TKPrefixHeader_pch
+
+#ifdef __OBJC__
+#import "Color.h"
+#import "NSView+Action.h"
+#import "NSButton+Action.h"
+#import "NSTextField+Action.h"
+#import <objc/runtime.h>
+#import <JRSwizzle.h>
+#import "WeChatPlugin.h"
+#import "MMStatus.h"
+#import "MMStatusMediaObject.h"
+#import "MMStatusImageMediaObject.h"
+#import "MMStatusLinkMediaObject.h"
+#endif
+
+#define CBGetClass(classname) objc_getClass(#classname)
+#define CBRegisterClass(superclassname, subclassname) { Class class = objc_allocateClassPair(CBGetClass(superclassname), #subclassname, 0);objc_registerClassPair(class); }
+
+
+#endif /* TKPrefixHeader_pch */
